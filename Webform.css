@@ -1,0 +1,144 @@
+body{
+    background-color: aqua;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-size: 4em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #eb0e0e;
+    background-color: burlywood;
+    text-align: center;
+    margin: 10px 0px;
+}
+
+section{
+    max-width: 3em 0em;
+}
+button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+button a {
+    font-size: 2em;
+    text-decoration: overline;
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-right: 10px;
+}
+label{
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    margin: 2px auto;
+    width: 75%;
+}
+input[type="submit"]{
+    width: 10%;
+    height: 4em;
+    align-self: center;
+    border-radius: 100px;
+    border: 0;
+    background-color: antiquewhite;
+    color: blue;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    cursor: pointer;
+    
+}
+input,textarea{
+    margin: 15px, 0px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px;
+    
+}
+input,#yesNoCheckbox{
+    margin: 15px, 0px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 0;
+    
+}
+input:focus, textarea:focus{
+    outline: none;
+}
+footer{
+    height: 48px;
+    background-color: burlywood;
+}
+footer p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 1.8em;
+    padding: 8px 0px;
+}
+
+/****************************  MEDIA STYLES - 550px  ***********************************/
+
+@media screen and (max-width: 600px)
+{  
+    body {
+        background-color: rgba(131, 119, 122, 0.85);
+        min-width: 480px;
+    }
+    
+    button {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+    label {
+        font-size: 25px;
+    }
+
+    input[type="submit"]{
+        margin-top: 10px;
+    }
+
+    footer p {
+        padding: 15px 0px;
+        font-size: 1.5em;
+    }
+
+}
+
+/****************************  MEDIA STYLES - 480px  ***********************************/
+
+@media screen and (min-width: 601px)
+{  
+    body {
+        background-color: rgba(84, 174, 57, 0.85);
+        min-width: 480px;
+    }
+    
+    label {
+        font-size: 30px;
+    }
+
+    footer p {
+        font-size: 1em;
+    }
+    .form{
+        display: grid;
+        grid-template-columns: 1fr, 1 fr;
+        grid-gap: 20px;
+    }
+
+
+
+}
