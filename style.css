@@ -23,7 +23,7 @@
 /* Medium screens (577px to 992px) */
 @media  screen and (min-width: 577px) and (max-width: 992px) {
     body {
-        background-color: rgb(27, 175, 52)8, 18)!important;
+        background-color: rgb(27, 175, 52)!important;
     }
 }
 
