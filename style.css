@@ -1,0 +1,48 @@
+.header {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: #fff; /* White text */
+    padding: 20px;
+    text-align: center;
+}
+
+.blog-container {
+    margin-top: 20px;
+}
+
+.clickable-column:hover {
+    cursor: pointer;
+}
+/* Small screens (576px and below) */
+@media  screen and (max-width: 576px) {
+    body {
+        background-color: lightblue!important; /* Change the color as needed */
+    }
+    
+}
+
+/* Medium screens (577px to 992px) */
+@media  screen and (min-width: 577px) and (max-width: 992px) {
+    .bg-success {
+        background-color: rgb(160, 198, 23)!important; /* Change the color as needed */
+    }
+    .bg-warning {
+        background-color: chocolate;
+    }
+    .bg-danger{
+        background-color: crimson;
+    }
+    .bg-info{
+        background-color: gold;
+    }
+    .bg-secondary{
+        background-color: lightcoral;
+    }
+}
+
+/* Large screens (993px and above) */
+@media  screen and (min-width: 993px) {
+    body {
+        background-color: lightcoral!important; /* Change the color as needed */
+    }
+
+}
