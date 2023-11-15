@@ -22,20 +22,8 @@
 
 /* Medium screens (577px to 992px) */
 @media  screen and (min-width: 577px) and (max-width: 992px) {
-    .bg-success {
-        background-color: rgb(160, 198, 23)!important; /* Change the color as needed */
-    }
-    .bg-warning {
-        background-color: chocolate!important;
-    }
-    .bg-danger{
-        background-color: crimson!important;
-    }
-    .bg-info{
-        background-color: gold!important;
-    }
-    .bg-secondary{
-        background-color: lightcoral!important;
+    body {
+        background-color: rgb(27, 175, 52)8, 18)!important;
     }
 }
 
