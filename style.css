@@ -26,16 +26,16 @@
         background-color: rgb(160, 198, 23)!important; /* Change the color as needed */
     }
     .bg-warning {
-        background-color: chocolate;
+        background-color: chocolate!important;
     }
     .bg-danger{
-        background-color: crimson;
+        background-color: crimson!important;
     }
     .bg-info{
-        background-color: gold;
+        background-color: gold!important;
     }
     .bg-secondary{
-        background-color: lightcoral;
+        background-color: lightcoral!important;
     }
 }
 
