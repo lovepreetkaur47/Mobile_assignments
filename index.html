@@ -1,146 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Canada Adventure</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Fiction Store</title>
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?&family=Work+Sans:wght@600&display=swap" rel="stylesheet">
-    <!-- Custom CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <style>
-        /* Add your custom styles here */
         body {
-            font-family: 'Work Sans', sans-serif;
+            background-color: slateblue;
         }
 
-        .header {
-            background-color: #007bff;
-            color: white;
-            text-align: center;
-            padding: 1rem;
+        /* Additional styles can be added here */
+        .bg-primary {
+            background-color: #007bff !important;
         }
 
-        .about-section {
-            margin-top: 2rem;
+        .bg-secondary {
+            background-color: #6c757d !important;
         }
 
-        .product-card {
-            margin-top: 2rem;
+        .bg-success {
+            background-color: #28a745 !important;
+        }
+
+        .text-black-50 {
+            color: rgba(0, 0, 0, 0.5) !important;
         }
     </style>
 </head>
-
-<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="0">
+<body data-spy="scroll" data-target="#navbar" data-offset="0">
 
     <!-- Navigation Bar -->
-    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">My Canada Adventure</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#products">Products</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            More
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Item 1</a></li>
-                            <li><a class="dropdown-item" href="#">Item 2</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <form class="d-flex ms-auto">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-            </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="navbar">
+        <a class="navbar-brand" href="#">Fashion Clothing Store</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#Home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Shop">Shop</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Aboutus">About us</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#Item1">Item 1</a>
+                        <a class="dropdown-item" href="#Item2">Item 2</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline ml-auto">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
         </div>
     </nav>
 
-    <!-- Header -->
-    <header class="header">
-        <h1 class="display-4">My Canada Adventure</h1>
+    <!-- Header Section -->
+    <header class="bg-primary text-black-50 text-center py-5">
+        <h1>Lovepreet Kaur</h1>
     </header>
 
-    <!-- About Section -->
-    <div id="about" class="container about-section">
-        <div class="row">
-            <div class="col-md-6">
-                <h2>About Us</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac urna vel ex finibus euismod. Nulla facilisi.
-                    Fusce luctus, ex vel viverra venenatis, urna metus bibendum eros, nec hendrerit elit turpis nec velit.
-                </p>
-            </div>
-            <div class="col-md-6">
-                <h2>Our Mission</h2>
-                <p>Phasellus interdum volutpat tortor, vitae facilisis elit elementum vel. Nulla facilisi. Aliquam tincidunt,
-                    lacus in cursus sodales, arcu odio imperdiet ligula, vel consectetur purus lectus nec sapien.
-                </p>
-            </div>
-        </div>
-    </div>
+    <!-- Main Content -->
+    <main>
+        <!-- About Section -->
+        <section id="Aboutus" class="container mt-4">
+            <!-- Bootstrap Scrollspy Navigation -->
+            <nav id="navbar-example2" class="navbar bg-body-tertiary bg-success p-3 mb-3">
+                <a class="navbar-brand text-white" href="#">About Us</a>
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#scrollspyHeading1">Section 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#scrollspyHeading2">Section 2</a>
+                    </li>
+                </ul>
+            </nav>
 
-    <!-- Product Display -->
-    <div id="products" class="container product-card">
-        <div class="row">
-            <!-- Product Card 1 -->
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="product1.jpg" class="card-img-top" alt="Product 1">
-                    <div class="card-body">
-                        <h5 class="card-title">Product 1</h5>
-                        <p class="card-text">Details about Product 1.</p>
+            <!-- Bootstrap Scrollspy Content -->
+            <div data-spy="scroll" data-target="#navbar-example2" data-offset="0" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0" id="about">
+                <h2 id="scrollspyHeading1">About Section 1</h2>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            </div>
+
+        </section>
+
+        <!-- Product Section -->
+        <section id="Shop" class="container mt-4">
+            <div class="row">
+                <!-- Bootstrap Card Examples -->
+                <div class="col-lg-4 mb-4">
+                    <div class="card">
+                        <img src="product1.jpg" class="card-img-top" alt="Product 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Product 1</h5>
+                            <p class="card-text">The formal dress code for men is the most traditional option and generally consists of a full suit or tuxedo. Accessories, such as neckties and pocket squares, are not typically allowed. The modern formal dress for men stipulates tuxedos, bowties and tailored fits.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card">
+                        <img src="product2.jpg" class="card-img-top" alt="Product 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Product 2</h5>
+                            <p class="card-text">A gown is a formal dress. When your date to a party or dance is wearing a tuxedo, you'll probably want to wear a gown. There are many different kinds of gowns, including ball gowns, wedding gowns, and evening gowns. All of them are worn primarily by women on formal occasions.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card">
+                        <img src="product1.jpg" class="card-img-top" alt="Product 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Product 3</h5>
+                            <p class="card-text">The formal dress code for men is the most traditional option and generally consists of a full suit or tuxedo. Accessories, such as neckties and pocket squares, are not typically allowed. The modern formal dress for men stipulates tuxedos, bowties and tailored fits.</p>
+                        </div>
                     </div>
                 </div>
             </div>
+        </section>
+        <div data-spy="scroll" data-target="#navbar-example2" data-offset="0" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0" id="about"></div>
+        <h2 id="scrollspyHeading2">About Section 2</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ipsum voluptatem molestiae doloribus soluta. Possimus sunt ab neque facilis fugit architecto eum non delectus, cupiditate vel voluptas esse, maxime molestiae!</p>
+    
 
-            <!-- Product Card 2 -->
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="product2.jpg" class="card-img-top" alt="Product 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Product 2</h5>
-                        <p class="card-text">Details about Product 2.</p>
-                    </div>
-                </div>
+        <!-- Contact Section -->
+        <div class="col p-3 m-3 bg-success" id="contact">
+            <h3 class="">Contact</h3>
+                <ul >
+                    <li>facebook: Kfashion@store.com</li>
+                    <li>Phone Number: 999999999</li>
+                    <li>instagram: @fashionzshop</li>
+                </ul>
             </div>
-
-            <!-- Product Card 3 -->
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="product3.jpg" class="card-img-top" alt="Product 3">
-                    <div class="card-body">
-                        <h5 class="card-title">Product 3</h5>
-                        <p class="card-text">Details about Product 3.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Bootstrap JS, Popper.js, and jQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
-        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-        crossorigin="anonymous"></script>
-
-</body>
-
-</html>
+        </main>
+    
+        <!-- Footer -->
+        <footer class="bg-secondary text-center text-black-50 p-3">
+            &copy; 2023 *fashion Clothing Store*. 
+        </footer>
+    
+    
+        <!-- Bootstrap Scripts -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    </body>
+    </html>
+    
