@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Inventory</title>
+
+        <!--bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+
+        <div class="container">
+            <!-- Header -->
+            <div class="row">
+                <div class="col text-center bg-secondary">
+                    <h1 class="mt-5">Lovepreet Kaur</h1>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col">
+                    <img src="Tv1.webp" class="img-fluid align-items-center" alt="Electronic Product">
+                    <p class="text-md-end">Television (TV) is a telecommunication medium for transmitting moving images and sound.
+                        The term can refer to a television set, or the medium of television transmission. Television is a mass medium
+                        for advertising, entertainment, news, and sports.
+                    </p>
+                </div>
+            </div>
+    
+            <!-- Table Section -->
+            <div class="row mt-4">
+                <div class="col">
+                    <h2>Product Inventory</h2>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Product Name</th>
+                                <th>Price</th>
+                                <th>Quantity</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Samsung 55</td>
+                                <td>$755</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td>LG 43</td>
+                                <td>$1500</td>
+                                <td>8</td>
+                            </tr>
+                            <tr>
+                                <td>Dell S3</td>
+                                <td>$1200</td>
+                                <td>15</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+    
+            <!-- Form Section -->
+            <div class="row mt-4">
+                <div class="col-md-12 order-md-3">
+                    <form class="bg-secondary p-3">
+                    <h2 class="text-black-50">Order Form</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="productName">Product Name</label>
+                            <select class="form-control" id="productName">
+                                <option>Sumsung 55</option>
+                                <option>LG 43</option>
+                                <option>Dell S3</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>What`s your order??</label>
+                            <div class="custom-control custom-switch">
+                                <input type="checkbox" class="custom-control-input" id="orderSwitch">
+                                <label class="custom-control-label" for="orderSwitch"></label>
+                            </div>
+                        </div>
+                        <div class="form-group bg-white">
+                            <label for="quantity">Quantity</label>
+                            <input type="range" class="form-control-range" id="quantity" min="1" max="20">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Place Order</button>
+                    </form>
+                </div>
+            </div>
+    
+        </div>
+    </body>
+</html>
