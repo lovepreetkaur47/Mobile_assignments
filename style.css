@@ -6,18 +6,7 @@ section{
     max-width: 3em 0em;
     border: 3px black!;
 }
-@media (max-width: 600px) {
-    /* CSS for mobile view */
-    .form-label {
-        display: block; /* Show labels below the fields */
-    }
-}
-@media (min-width: 601px) {
-    /*desktop view */
-    .form-label {
-        display: inline-block; /* Show labels beside the fields */
-    }
-}
+
 button{
     padding: 10px 20px;
     border: none;
@@ -78,4 +67,16 @@ input,#yesNoCheckbox{
 }
 input:focus, textarea:focus{
     outline: none;
+}
+@media screen and  (max-width: 600px) {
+    /* CSS for mobile view */
+    .form-label {
+        display: block; 
+    }
+}
+@media screen and (min-width: 601px) {
+    /*desktop view */
+    .form-label {
+        display: inline-block; 
+    }
 }
