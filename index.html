@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Responsive Social Media</title>
+</head>
+<body data-spy="scroll" data-target="#navbar" data-offset="0">
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top " id="navbar">
+        <div class="navbar container mt-6">
+            <a class="active" href="#"><i class="fa fa-fw fa-home "></i> </a> <br>
+            <a href="#"><i class="fa fa-fw fa-bell"></i></a>
+ 
+            <a href="#"><i class="fa fa-fw fa-user"></i></a>
+        </div>
+    </nav>
+    
+        <header class="text-black text-center py-5 m-5 pb-5 ">
+            <h1>Daily Express</h1>       
+        </header>
+        <!--<div class="col-md-6 order-md-1 mt-3">
+            <h2 class="text-danger">Image Example</h2>
+                <img src="https://via.placeholder.com/400" alt="Image" class="img-fluid">
+        </div>-->
+        
+        <div class="alert alert-success m-5 pb-5 bg-info">
+            <strong>Latest News/Job Posting!</strong> 
+            Checkout for daily news and job postings
+        </div>
+        
+        <button type="button" class="btn btn-primary m-5 pb-5 bg-info" data-toggle="modal" data-target="#myModal">
+            Open modal
+          </button>
+        
+          <!-- The Modal -->
+          <div class="modal fade" id="myModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+              
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">Today updation</h4>
+                  <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+                
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <img src="news1.jpg" alt="Image 2" height="300" width="300">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste est commodi, 
+                        nemo possimus dolorum harum, a at labore aliquam provident officiis sit unde
+                        hic fugiat molestias rerum nobis laudantium natus.</p>
+                    <p>Timestamp: INSERT_TIMESTAMP_HERE</p>
+                </div>
+                
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <button type="button" class="btn btn-primary m-5 pb-5 bg-info" data-toggle="modal" data-target="#Modal">
+            Open modal
+          </button>
+          <!-- The Modal -->
+          <div class="modal fade" id="Modal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+              
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">Animal love</h4>
+                  <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+                
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <img src="news.jpg" alt="Image 2" height="300" width="300">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste est commodi, 
+                        nemo possimus dolorum harum, a at labore aliquam provident officiis sit unde
+                        hic fugiat molestias rerum nobis laudantium natus.</p>
+                    <p>Timestamp: INSERT_TIMESTAMP_HERE</p>
+                </div>
+                
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <button type="button" class="btn btn-primary m-5 pb-5 bg-info" data-toggle="modal" data-target="#Modal1">
+            Open modal
+          </button>
+          <!-- The Modal -->
+          <div class="modal fade" id="Modal1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+              
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">Breaking news</h4>
+                  <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+                
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <img src="depositphotos_12553000-stock-photo-breaking-news-screen.jpg" alt="Image of news" height="300" width="300">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste est commodi, 
+                        nemo possimus dolorum harum, a at labore aliquam provident officiis sit unde
+                        hic fugiat molestias rerum nobis laudantium natus.</p>
+                    <p>Timestamp: INSERT_TIMESTAMP_HERE</p>
+                </div>
+                
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <section class="border ">
+            <form action="#" method="get">
+                <label for="fName">Full Name</label>
+                <input type="text" name="fName" id="fName" required/>
+
+                <label for="dateOfBirth">Date Of Birth</label>
+                <input type="datetime" name="dateOfBirth" id="dateOfBirth" required/>
+
+                <label for="tel">Phone Number</label>
+                <input type="tel" name="tel" id="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="format: 000-000-0000" required/>
+
+                <label for="massage">Massage</label>
+                <textarea name="massage" id="massage" placeholder="type taxt here"></textarea>
+                
+                <label for="ZCode">Zip Code</label>
+                <textarea name="Number" id="ZCode" placeholder="\d{5,5}(-\d{4,4})?"></textarea>
+                
+                
+                
+
+                <input type="submit" value="submit" />
+               
+            </form>
+        </section>
+
+
+          
+          
+          </body>
+          </html> 
+          
+</body>
+</html>

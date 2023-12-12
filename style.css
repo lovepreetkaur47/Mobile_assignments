@@ -1,0 +1,81 @@
+body{
+    background-color: bisque;
+    color: firebrick;
+}
+section{
+    max-width: 3em 0em;
+    border: 3px black!;
+}
+@media (max-width: 600px) {
+    /* CSS for mobile view */
+    .form-label {
+        display: block; /* Show labels below the fields */
+    }
+}
+@media (min-width: 601px) {
+    /*desktop view */
+    .form-label {
+        display: inline-block; /* Show labels beside the fields */
+    }
+}
+button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+button a {
+    font-size: 2em;
+    text-decoration: overline;
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-right: 10px;
+}
+label{
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+}
+form{
+    border: 5em black;
+    display: flex;
+    flex-direction: column;
+    margin: 2px auto;
+    width: 75%;
+}
+input[type="submit"]{
+    width: 10%;
+    height: 4em;
+    align-self: center;
+    border-radius: 100px;
+    border: 0;
+    background-color: antiquewhite;
+    color: blue;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    cursor: pointer;
+    
+}
+input,textarea{
+    margin: 15px, 0px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px;
+    
+}
+input,#yesNoCheckbox{
+    margin: 15px, 0px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 0;
+    
+}
+input:focus, textarea:focus{
+    outline: none;
+}
